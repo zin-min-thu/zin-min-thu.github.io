@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations for tech stacks */
+@keyframes slide-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slide-left-to-right {
+  animation: slide-left-to-right 20s linear infinite;
+}
+
+.animate-slide-left-to-right:hover {
+  animation-play-state: paused;
+}
